@@ -1,0 +1,142 @@
+/* basics */
+body {
+    background: white;
+    color: black;
+	font-family: system-ui;
+    line-height: 1.8;
+}
+main{
+    position: relative;
+    padding: 32px;
+    margin: auto;
+    max-width: 640px;
+}
+a{
+    color: inherit;
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+}
+pre{
+    border: 1px solid #d4d4d8;
+    border-radius: 6px;
+    padding: 16px;
+}
+summary {
+    cursor: pointer;
+}
+.content {
+	max-width: 640px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+/* mathjax */
+.math {
+    overflow-x: auto;
+}
+.math-inline svg{
+    display: inline-block;
+}
+
+/* titile hash hover stuff */
+h1,h2,h3,h4 {
+    position: relative;
+}
+h1 a,h2 a,h3 a,h4 a {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: inherit;
+}
+h1 a:before,h2 a:before,h3 a:before,h4 a:before {
+	position: absolute;
+	right: 100%;
+	display: block;
+	content: '#';
+	margin-right: 0.2em;
+	visibility: hidden;
+	opacity: 0.5;
+}
+h1:hover a:before,h2:hover a:before,h3:hover a:before,h4:hover a:before {
+	visibility: visible;
+}
+sup a{
+    display: inline;
+}
+
+/* toc */
+.toc {
+    z-index: 1;
+    position: fixed;
+    width: 280px;
+    padding: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    background: #f4f4f5;
+}
+.toc ol {
+    list-style: none;
+}
+.toc-link-h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.toc-level-1, .toc-level-2, .toc-item-h2 {
+    padding: 0;
+}
+@media (max-width: 768px) {
+    body{
+        padding-left: 0px;
+    }
+    .toc {
+        left: -100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #18181b;
+        color: #e4e4e7;
+    }
+    .toc {
+        background: #27272a;
+    }
+    pre{
+        border: 1px solid #3f3f46;
+    }
+}
+
+/*print*/
+@media print {
+    body {
+        font-size: 0.8em;
+        line-height: 1.2;
+    }
+}
+
+/* code highlighting */
+.remark-code-title,
+pre[class^='language-'] {
+	padding: 10px;
+	margin: 0;
+}
+.remark-code-title {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 4px 4px 0 0;
+	background: rgba(0, 0, 0, 0.08);
+	font-family: monospace;
+	font-weight: bold;
+}
+pre[class^='language-'] {
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 0 0 4px 4px;
+}
