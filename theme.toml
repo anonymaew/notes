@@ -3,7 +3,7 @@
 
 name = "Notes by napatsc"
 license = "MIT"
-licenselink = "https://github.com/anonymaew/notes/blob/master/LICENSE"
+licenselink = "https://github.com/anonymaew/notes-theme/blob/master/LICENSE"
 description = "My Hugo theme for taking notes"
 homepage = "https://notes.napatsc.com/"
 tags = ["blog", "notes", "personal"]
