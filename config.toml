@@ -1,0 +1,7 @@
+theme = 'notes'
+[markup.goldmark.renderer]
+  unsafe = true
+[markup.highlight]
+  noClasses = false
+[markup.tableOfContents]
+  endLevel = 4
