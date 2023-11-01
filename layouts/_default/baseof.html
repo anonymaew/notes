@@ -3,11 +3,11 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "navbar.html" . -}}
-        {{- partial "toc.html" . -}}
         <main>
             <div>
             {{- block "main" . }}{{- end }}
             </div>
         </main>
+        {{- partial "toc.html" . -}}
     </body>
 </html>
