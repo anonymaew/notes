@@ -5,3 +5,6 @@ theme = 'notes'
   noClasses = false
 [markup.tableOfContents]
   endLevel = 4
+[markup.goldmark.katex]
+    enabled = true
+    warnings = false
